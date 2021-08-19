@@ -1,0 +1,228 @@
+body{
+    background-color:rgb(23,23,23); 
+    /* background-image: url("images/Bckground\ image.jpeg"); */
+     color: white;
+     margin: 0;
+     padding: 0;
+ }
+ ::-webkit-scrollbar{
+     width: 8px;
+ }
+ ::-webkit-scrollbar-track{
+     background: whitesmoke;
+     border-radius: 5px;
+    
+ }
+ ::-webkit-slider-thumb{
+     background:palevioletred ;
+   
+ }
+ ::-webkit-scrollbar-thumb:hover{
+     background:palevioletred ;
+     border-radius: 10px;
+ 
+ }
+ html{
+     scroll-behavior: smooth;
+     font-family: 'Montserrat', sans-serif;
+ }
+   a{
+     padding:20px;
+     position: relative;
+     font-weight: normal;
+     font-family: 'Montserrat', sans-serif;
+     font-style: oblique;
+     text-align: center;
+     text-decoration: none;
+     color:whitesmoke;
+     transition: 0.5s; 
+  
+    
+  }
+  
+ #top::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 2px;
+     top: 100%;
+     left: 0;
+     background:palevioletred;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: right;
+ 
+   }
+ 
+   #top:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+     background-color:palevioletred;
+   }
+   a:hover{
+       color:palevioletred;
+      
+   }
+   .navbar {
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     align-items: center;
+     color: whitesmoke; 
+     
+ }
+ .navbar .brand-title  {
+     font-size: 1rem;
+     margin: .5rem;
+     margin-top: 0.8%;
+     margin-left: 1.5%;
+ }
+ 
+ .navbar-links {
+     height: 100%;
+     margin-top: 0.8%;
+   
+ }
+ 
+ .navbar-links ul {
+     display: flex;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .navbar-links li {
+     list-style: none;
+ }
+ 
+ .navbar-links li a {
+     display: block;
+     text-decoration: none;
+     color: white;
+     padding: 1rem;
+    
+ }
+ .menu-button {
+     position: absolute;
+     top: .75rem;
+     right: 1rem;
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+ }
+ 
+ .menu-button .bar {
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+ }
+ 
+ @media (max-width: 800px) {
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .menu-button {
+         display: flex;
+     }
+ 
+     .navbar-links {
+         display: none;
+         width: 100%;
+     }
+ 
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+     }
+ 
+     .navbar-links ul li {
+         text-align: center;
+     }
+ 
+     .navbar-links ul li a {
+         padding: .5rem 1rem;
+     }
+ 
+     .navbar-links.active {
+         display: flex;
+     }
+ } 
+   .heading{   
+     padding-top: 10%;
+     height: 60vh;
+     background-repeat: no-repeat;
+     background-attachment: fixed;  
+     text-align: center; 
+ }
+ 
+ h2{
+     color: whitesmoke;
+     font-size: 2.5rem;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ /* h1{
+     color: crimson;
+     font-size: 3rem;
+     font-family: 'Montserrat', sans-serif;
+ } */
+ .tagg{
+     color: palevioletred;
+     font-size: 3rem;
+     font-family: 'Montserrat', sans-serif; 
+     position: relative;
+     top: 50%;
+     width: 21em;
+     margin: 0 auto;
+     text-align: center;
+     white-space: nowrap;
+     overflow: hidden;
+     transform: translateY(-50%);
+ }
+ .anim-typewriter {
+     animation: typewriter 4s steps(44) 1s 1 normal both,
+       blinkTextCursor 500ms steps(44) infinite normal;
+     top: 25px;
+   }
+   @keyframes typewriter {
+     from {
+       width: 0;
+     }
+     to {
+       width: 21em;
+     }
+   }
+   @keyframes blinkTextCursor {
+     from {
+       border-right-color:palevioletred;
+     }
+     to {
+       border-right-color:palevioletred;
+     }
+   }
+ 
+ span{
+     color: palevioletred;
+ }
+ .about{
+    height: 90vh;
+    background-color: rgb(73, 72, 72);
+    margin-top: 300;
+}
+ #p1{                                                                                                        
+    color:rgb(23,23,23); 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    }
+    #gkm{
+        color:palevioletred ;
+       padding-top: 30px;
+       font-family: 'Montserrat', sans-serif;
+       text-align: center;
+    
+    } 
